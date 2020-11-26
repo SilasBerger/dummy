@@ -12,7 +12,7 @@ jobs:
       with:
         repository: SilasBerger/gh-action-hello-world
         ref: v1
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.PRIVATE_ACTION_REPO_TOKEN }}
         path: .github/actions/hello-world
     - name: Hello world action step
       id: hello
