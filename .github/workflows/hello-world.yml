@@ -9,7 +9,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: SilasBerger/gh-action-hello-world
-        ref: v1
+        ref: v1.1
         token: ${{ secrets.PRIVATE_ACTION_REPO_TOKEN }}
         path: .github/actions/hello-world
     - name: Hello world action step
