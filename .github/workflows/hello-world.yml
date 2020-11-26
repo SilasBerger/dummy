@@ -17,9 +17,7 @@ jobs:
         token: ${{ secrets.PRIVATE_ACTION_REPO_TOKEN }}
         path: .github/actions/hello-world
     - name: Print directory structure
-      run: "pwd"
-      run: "ls"
-      run: "ls ./repo"
+      run: "pwd && ls && ls ./repo"
     - name: Hello world action step
       id: hello
       uses: ./.github/actions/hello-world
