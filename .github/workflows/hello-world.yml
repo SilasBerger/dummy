@@ -13,6 +13,11 @@ jobs:
         repository: SilasBerger/gh-action-hello-world
         token: ${{ secrets.PRIVATE_ACTION_REPO_TOKEN }}
         path: .github/actions/hello-world
-    - name: Hello world action step
-      id: hello
+    - name: Update data
       uses: ./.github/actions/hello-world
+    - name: Commit
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: "[AUTO] Update data."
+        branch: "automation"
+        file_pattern: "data/*.json"
