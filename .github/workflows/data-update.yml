@@ -7,6 +7,8 @@ jobs:
     steps:
     - name: Clone this repo
       uses: actions/checkout@v2
+        with:
+          ref: "automation"
     - name: Update data
       uses: ./.github/actions/data-update
     - name: Commit & Push
