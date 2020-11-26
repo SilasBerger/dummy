@@ -8,8 +8,7 @@ jobs:
     - name: Checkout private action repo
       uses: actions/checkout@v2
       with:
-        repository: SilasBerger/gh-action-hello-world
-        ref: v1
+        repository: https://github.com/SilasBerger/gh-action-hello-world.git
         token: ${{ secrets.GITHUB_TOKEN }}
         path: .github/actions/hello-world
     - name: Hello world action step
