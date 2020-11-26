@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
+    - name: Clone this repo
+      uses: actions/checkout@v2
     - name: Checkout private action repo
       uses: actions/checkout@v2
       with:
