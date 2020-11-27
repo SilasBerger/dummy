@@ -1,6 +1,6 @@
 on: [ workflow_dispatch ]
 
-name: Manually triggered workflow
+name: Manually triggered workflow on the automation branch
 
 jobs:
   hello_job:
