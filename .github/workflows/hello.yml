@@ -3,7 +3,7 @@ name: Dummy action
 
 jobs:
   print_job:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     name: Dummy job
     steps:
       - name: Print to console
