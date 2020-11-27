@@ -7,4 +7,4 @@ jobs:
     name: Dummy job
     steps:
       - name: Print to console
-        run: echo "Hello from the automation branch!"
+        run: echo "Hello from the new-branch branch!"
