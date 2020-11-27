@@ -2,7 +2,7 @@ on:
   schedule:
     - cron: '42 13,14 * * *'
 
-name: Scheduled workflow
+name: Mirror workflow
 
 jobs:
   hello_job:
