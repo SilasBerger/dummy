@@ -1,10 +1,4 @@
-on: 
-  workflow_dispatch:
-    inputs:
-      doesNothing:
-        description: "Does nothing"
-        reqquired: false
-        default: ""
+on: [ workflow_dispatch ]
 
 name: Manually triggered workflow
 
